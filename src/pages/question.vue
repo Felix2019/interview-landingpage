@@ -1,11 +1,11 @@
 <template>
-  <div class="h-full m-6 flex justify-center items-center">
+  <div class="h-screen p-4 bg-background flex justify-center items-center">
     <Loader v-if="isLoading" />
 
     <p v-else-if="error" class="text-xl font-bold">Fehler aufgetreten!</p>
 
     <div v-else class="w-full md:w-2/3 lg:1/4">
-      <div class="bg-secondary rounded-t-xl shadow p-4 space-y-8">
+      <div class="bg-secondary rounded-t-xl shadow p-3 space-y-8">
         <!-- question content -->
         <div class="bg-white rounded-lg p-2.5">{{ question.content }}</div>
 
@@ -42,9 +42,7 @@
           >
             <Icon icon="mdi:arrow-right" width="26" height="26" />
 
-            <span class="text-lg font-bold text-left">{{
-              question.answerRight
-            }}</span>
+            <span class="font-bold text-left">{{ question.answerRight }}</span>
           </button>
 
           <!-- left button -->
@@ -53,9 +51,7 @@
           >
             <Icon icon="mdi:arrow-left" width="26" height="26" />
 
-            <span class="text-lg font-bold text-left">{{
-              question.answerLeft
-            }}</span>
+            <span class="font-bold text-left">{{ question.answerLeft }}</span>
           </button>
         </div>
 
@@ -63,31 +59,29 @@
       </div>
 
       <!-- option bar -->
-      <div
-        class="flex justify-between bg-white px-8 py-10 rounded-b-xl shadow-md"
-      >
+      <div class="flex justify-between bg-white px-8 py-10 rounded-b-xl shadow">
         <!-- share btn -->
-        <span class="flex items-center space-x-5">
-          <button @click="share" class="bg-secondary rounded-xl p-3 shadow">
-            <Icon icon="mdi:share-variant" width="22" height="22" />
+        <span class="flex items-center space-x-4">
+          <button @click="share" class="bg-secondary rounded-xl p-2.5 shadow">
+            <Icon icon="mdi:share-variant" width="20" height="20" />
           </button>
-          <p class="font-bold">{{ question.shareCount }}</p>
+          <p class="text-sm font-bold">{{ question.shareCount }}</p>
         </span>
 
         <!-- comment btn -->
-        <span class="flex items-center space-x-5">
-          <button class="bg-secondary rounded-xl p-3 shadow">
-            <Icon icon="mdi:comment-outline" width="22" height="22" />
+        <span class="flex items-center space-x-4">
+          <button class="bg-secondary rounded-xl p-2.5 shadow">
+            <Icon icon="mdi:comment-outline" width="20" height="20" />
           </button>
-          <p class="font-bold">{{ question.commentCount }}</p>
+          <p class="text-sm font-bold">{{ question.commentCount }}</p>
         </span>
 
         <!-- like btn -->
-        <span class="flex items-center space-x-5">
-          <button class="bg-secondary rounded-xl p-3 shadow">
-            <Icon icon="mdi:heart-outline" width="22" height="22" />
+        <span class="flex items-center space-x-4">
+          <button class="bg-secondary rounded-xl p-2.5 shadow">
+            <Icon icon="mdi:heart-outline" width="20" height="20" />
           </button>
-          <p class="font-bold">{{ question.likeCount }}</p>
+          <p class="text-sm font-bold">{{ question.likeCount }}</p>
         </span>
       </div>
     </div>

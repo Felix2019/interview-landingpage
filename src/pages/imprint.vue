@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 space-y-4 bg-background">
+  <div class="h-screen p-6 space-y-4 bg-background">
     <h1 class="font-bold text-lg">Imprint</h1>
 
     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
