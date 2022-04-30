@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex flex-col p-8 space-y-20 bg-background md:h-screen md:flex-row md:items-center md:space-y-0 md:p-16"
+    class="h-screen flex flex-col p-8 overflow-x-hidden space-y-4 bg-background md:h-screen md:flex-row md:items-center md:space-y-0 md:p-16"
   >
     <!-- info container -->
-    <div class="w-full flex flex-col space-y-12 md:basis-1/2">
+    <div class="w-full flex flex-col space-y-8 md:basis-1/2 md:space-y-12">
       <!-- header text -->
       <div
-        class="flex flex-col space-y-2 text-6xl font-bold uppercase md:text-8xl"
+        class="flex flex-col space-y-2 text-4xl font-bold uppercase md:text-8xl"
       >
         <span>the</span>
         <span class="text-primary">social</span>
@@ -17,10 +17,7 @@
       <!-- store buttons -->
       <div class="flex items-center space-x-6">
         <!-- app store badge -->
-        <a
-          target="blank"
-          href="https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&gl=DE&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-        >
+        <a target="blank" href="https://interview-app.com">
           <img
             src="../assets/app_store_badge_1.png"
             alt="Download Interview on the App Store"
@@ -29,9 +26,7 @@
         </a>
 
         <!-- google play badge -->
-        <a
-          target="blank"
-          href="https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&gl=DE&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+        <a target="blank" href="https://interview-app.com"
           ><img
             alt="Get Interview on Google Play"
             src="../assets/google-play-badge.png"
@@ -44,7 +39,7 @@
     <img
       alt="App Mockup"
       src="../assets/mockup_2.png"
-      class="h-full object-contain md:basis-1/2"
+      class="h-96 scale-150 object-cover md:basis-1/2 md:scale-110 md:h-full"
     />
   </div>
 </template>

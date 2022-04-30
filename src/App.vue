@@ -18,6 +18,8 @@ import Footer from "./components/footer.vue";
   -webkit-scrollbar: 0;
 }
 
+/* firebase deploy --only hosting:interview-app-9 */
+
 ::-webkit-scrollbar {
   display: none !important;
 }

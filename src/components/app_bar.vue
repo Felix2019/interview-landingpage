@@ -9,7 +9,7 @@
           alt="logo-image"
           class="h-6 w-6 rounded-full object-cover"
         />
-        <span class="text-xl tracking-wide font-bold">Interview</span>
+        <span class="text-xl tracking-wide font-semibold">Interview</span>
       </div>
     </router-link>
 
