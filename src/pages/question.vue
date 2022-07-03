@@ -15,11 +15,11 @@
             class="flex items-center space-x-2 bg-tertiary rounded-lg shadow px-3 py-1.5"
           >
             <!-- user image -->
-            <img
+            <!-- <img
               :src="question.user.photoURL"
               alt="user-image"
               class="bg-white rounded-full shadow w-6 h-6"
-            />
+            /> -->
             <!-- username -->
             <span class="font-bold">{{ question.user.username }}</span>
           </div>

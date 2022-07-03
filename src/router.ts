@@ -16,11 +16,6 @@ const routes = [
     name: "Privacy Policy",
     component: () => import("./pages/privacy_policy.vue"),
   },
-  {
-    path: "/imprint",
-    name: "Imprint",
-    component: () => import("./pages/imprint.vue"),
-  },
 ];
 
 const router = createRouter({
