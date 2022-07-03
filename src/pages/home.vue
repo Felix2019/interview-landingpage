@@ -29,14 +29,6 @@
             />
           </a>
 
-          <!-- <a href="https://www.qries.com/">
-            <img
-              alt="Qries"
-              src="https://www.qries.com/images/banner_logo.png"
-              height="70"
-            />
-          </a> -->
-
           <!-- google play badge -->
           <a href="https://interview-app.com" target="_blank"
             ><img
